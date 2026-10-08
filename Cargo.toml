@@ -1,0 +1,11 @@
+[package]
+name = "muddy-wrap"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Rewrite Rust string literals to use the muddy obfuscation macro"
+repository = "https://github.com/sarpedondev/muddy-wrap"
+
+[dependencies]
+syn = { version = "2.0", features = ["full", "visit"] }
+proc-macro2 = { version = "1.0.95", features = ["span-locations"] }
